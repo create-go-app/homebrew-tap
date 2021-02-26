@@ -11,15 +11,15 @@ class Cgapp < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/create-go-app/cli/releases/download/v1.7.0/cgapp_v1.7.0_macOS_x86_64.tar.gz"
-    sha256 "0a20e113e15bbdd900c294daec503871f8a60f1e78b2ec89e3ec52d06fd164ef"
+    sha256 "0621de711a7046e3b21b80da9780de52cd470f4dd86543e315d1882f46bfd65b"
   end
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/create-go-app/cli/releases/download/v1.7.0/cgapp_v1.7.0_macOS_arm64.tar.gz"
-    sha256 "fd096b291537e5ca1f5c8b6b9c80dd710fb14f9b189f07b94c62800222832053"
+    sha256 "0adb362187d76aaeedf49f0db12e76afb74021845cf4079c9c3234add3081fd1"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/create-go-app/cli/releases/download/v1.7.0/cgapp_v1.7.0_Linux_x86_64.tar.gz"
-    sha256 "e3a778476fd7db09b331e9aa64dd1c77bec6ad7dabcdee06302ae3d398a8325d"
+    sha256 "1a64239b1248c2788f0d04190f0a3800bc68537ffc3b8017614ec18470a7861b"
   end
 
   depends_on "git"
