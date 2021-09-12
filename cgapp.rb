@@ -5,25 +5,25 @@
 class Cgapp < Formula
   desc "A powerful CLI for the Create Go App project. Create a new production-ready project with backend, frontend and deploy automation by running one CLI command!"
   homepage "https://create-go.app/"
-  version "v3.0.0"
+  version "v3.0.1"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/create-go-app/cli/releases/download/v3.0.0/cgapp_v3.0.0_macOS_x86_64.tar.gz"
-      sha256 "39b4f9c23f54be468fe05d4b777bd3c3cb554cf72173c6ff69f0bdde26fc473b"
+      url "https://github.com/create-go-app/cli/releases/download/v3.0.1/cgapp_v3.0.1_macOS_x86_64.tar.gz"
+      sha256 "af5eb10c31d82929a5b921635acf0126a7ef694bc2b0a88e29c1643069cb3298"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/create-go-app/cli/releases/download/v3.0.0/cgapp_v3.0.0_macOS_arm64.tar.gz"
-      sha256 "cbd700af0a39d65b6632cd80aeb9f1f7383fed166b59e29c64aa8a492916ec67"
+      url "https://github.com/create-go-app/cli/releases/download/v3.0.1/cgapp_v3.0.1_macOS_arm64.tar.gz"
+      sha256 "a3887a4cbb14f30e1450de0a22d5f81cd7b9018412acfb4473f7369e6a27c585"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/create-go-app/cli/releases/download/v3.0.0/cgapp_v3.0.0_Linux_x86_64.tar.gz"
-      sha256 "a21d83bd0b30ad3f0735f120a77c1770cb917eafe5e10faa1d56d2047a3d0c12"
+      url "https://github.com/create-go-app/cli/releases/download/v3.0.1/cgapp_v3.0.1_Linux_x86_64.tar.gz"
+      sha256 "3fcb38dbde1866608091c3638c386ca009f48117ba2da9ebc2703162e3c44560"
     end
   end
 
