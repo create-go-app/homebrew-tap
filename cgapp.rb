@@ -5,21 +5,21 @@
 class Cgapp < Formula
   desc "A powerful CLI for the Create Go App project. Create a new production-ready project with backend, frontend and deploy automation by running one CLI command!"
   homepage "https://create-go.app/"
-  version "v3.2.1"
+  version "v3.2.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/create-go-app/cli/releases/download/v3.2.1/cgapp_v3.2.1_macOS_arm64.tar.gz"
-      sha256 "50fd0a15adb0ad2bddb8676becd1f18f92af61097aec012ba927174e87559008"
+      url "https://github.com/create-go-app/cli/releases/download/v3.2.2/cgapp_v3.2.2_macOS_arm64.tar.gz"
+      sha256 "07bf9cc1ac6a9503a2066db2acf36c13de0550be0c2e81b0c23698e3f1835bb9"
 
       def install
         bin.install "cgapp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/create-go-app/cli/releases/download/v3.2.1/cgapp_v3.2.1_macOS_x86_64.tar.gz"
-      sha256 "0573700a086f2287999573c12a657a534bd487e7b9620f8f84c8140070294753"
+      url "https://github.com/create-go-app/cli/releases/download/v3.2.2/cgapp_v3.2.2_macOS_x86_64.tar.gz"
+      sha256 "c78ab14d79fbb3b5cc9a113630f002bb74b71eaace85fce6596f0906a7d6b639"
 
       def install
         bin.install "cgapp"
@@ -29,8 +29,8 @@ class Cgapp < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/create-go-app/cli/releases/download/v3.2.1/cgapp_v3.2.1_Linux_x86_64.tar.gz"
-      sha256 "7ea31dc06a6abbabff823c2604f1ff1dd52cf51402554a278eb7e24911670b9e"
+      url "https://github.com/create-go-app/cli/releases/download/v3.2.2/cgapp_v3.2.2_Linux_x86_64.tar.gz"
+      sha256 "cf45880fa599502ee31c6f0f7c624094d0a56126834b39dedf9569cc92b9036f"
 
       def install
         bin.install "cgapp"
