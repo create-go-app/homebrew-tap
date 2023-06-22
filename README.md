@@ -1,4 +1,4 @@
-# homebrew-cli
+# homebrew-tap
 
 Formula for Homebrew.
 
@@ -6,10 +6,10 @@ Apple macOS and GNU/Linux users available way to install [Create Go App CLI](htt
 
 ```bash
 # Tap a new formula:
-brew tap create-go-app/cli
+brew tap create-go-app/tap
 
 # Installation:
-brew install create-go-app/cli/cgapp
+brew install create-go-app/tap/cli
 ```
 
 Auto update CLI to the latest version by this command:
@@ -20,4 +20,4 @@ brew upgrade
 
 ## ⚠️ License
 
-MIT &copy; [Vic Shóstak](https://github.com/koddr) & [True web artisans](https://1wa.co/).
+MIT &copy; [Vic Shóstak](https://github.com/koddr) & [True web artisans](https://github.com/truewebartisans).
