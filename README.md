@@ -15,7 +15,7 @@ brew install create-go-app/tap/cgapp
 Auto update CLI to the latest version by this command:
 
 ```bash
-brew upgrade
+brew upgrade create-go-app/tap/cgapp
 ```
 
 ## ⚠️ License
