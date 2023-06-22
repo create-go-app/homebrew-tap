@@ -9,7 +9,7 @@ Apple macOS and GNU/Linux users available way to install [Create Go App CLI](htt
 brew tap create-go-app/tap
 
 # Installation:
-brew install create-go-app/tap/cli
+brew install create-go-app/tap/cgapp
 ```
 
 Auto update CLI to the latest version by this command:
