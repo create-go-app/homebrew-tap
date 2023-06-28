@@ -7,7 +7,7 @@ class Cgapp < Formula
 Focus on writing code and thinking of business-logic! The CLI will take care of the rest.
 "
   homepage "https://github.com/create-go-app/cli"
-  version "4.0.0"
+  version "4.0.1"
   license "Apache 2.0"
 
   depends_on "git"
@@ -15,16 +15,16 @@ Focus on writing code and thinking of business-logic! The CLI will take care of 
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/create-go-app/cli/releases/download/v4.0.0/cgapp_4.0.0_darwin_arm64.tar.gz"
-      sha256 "9ac6742ff848081c025f424c3795c98fec1b5692958e6c281e16101759f098c3"
+      url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_darwin_arm64.tar.gz"
+      sha256 "253ce312473f99a5486d4dfaad9bc9535cfb9503ee8c9560dd0e617c7f25b58e"
 
       def install
         bin.install "cgapp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/create-go-app/cli/releases/download/v4.0.0/cgapp_4.0.0_darwin_amd64.tar.gz"
-      sha256 "1dceac86a71524f5fd3840b12c1af16cdf63dfa1ab9e228bb70248a58fc37b7c"
+      url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_darwin_amd64.tar.gz"
+      sha256 "71343a2dd966be01691e4106a5cab5ce29ac30c887432412f85619f28b5e8546"
 
       def install
         bin.install "cgapp"
@@ -34,16 +34,16 @@ Focus on writing code and thinking of business-logic! The CLI will take care of 
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/create-go-app/cli/releases/download/v4.0.0/cgapp_4.0.0_linux_arm64.tar.gz"
-      sha256 "30100177415edaa8ab87011d8410462fd82c8316029eda92811b180643cd42d2"
+      url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_linux_arm64.tar.gz"
+      sha256 "598985161b58302147c210e62b2bbf9b07d9322aecb5c313a234d12ebdad80d7"
 
       def install
         bin.install "cgapp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/create-go-app/cli/releases/download/v4.0.0/cgapp_4.0.0_linux_amd64.tar.gz"
-      sha256 "46e518ca70a8fb7412fad9b2ff1c62f6bb426f83d6e0ed5b7c1a0bc3011c03be"
+      url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_linux_amd64.tar.gz"
+      sha256 "c3a1ffb02396395a36a5b13bccadbf5f1ac9a99a5ccb4fcdaa7834173d8c07c1"
 
       def install
         bin.install "cgapp"
