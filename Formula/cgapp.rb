@@ -16,7 +16,7 @@ Focus on writing code and thinking of business-logic! The CLI will take care of 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_darwin_arm64.tar.gz"
-      sha256 "253ce312473f99a5486d4dfaad9bc9535cfb9503ee8c9560dd0e617c7f25b58e"
+      sha256 "fe965da42fe261096caf2b4900047818d893438ec9e059f1e403bcb313dbdadd"
 
       def install
         bin.install "cgapp"
@@ -24,7 +24,7 @@ Focus on writing code and thinking of business-logic! The CLI will take care of 
     end
     if Hardware::CPU.intel?
       url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_darwin_amd64.tar.gz"
-      sha256 "71343a2dd966be01691e4106a5cab5ce29ac30c887432412f85619f28b5e8546"
+      sha256 "94d72492c108c3963d9c0eb9b1a329561e0b17e7b1ff08084b7d06bd8828edfb"
 
       def install
         bin.install "cgapp"
@@ -35,7 +35,7 @@ Focus on writing code and thinking of business-logic! The CLI will take care of 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_linux_arm64.tar.gz"
-      sha256 "598985161b58302147c210e62b2bbf9b07d9322aecb5c313a234d12ebdad80d7"
+      sha256 "20d7ac57361e8ef807315851b7703ab6ede3a8a29d4c80be2d4ef5258e8cabd6"
 
       def install
         bin.install "cgapp"
@@ -43,7 +43,7 @@ Focus on writing code and thinking of business-logic! The CLI will take care of 
     end
     if Hardware::CPU.intel?
       url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_linux_amd64.tar.gz"
-      sha256 "c3a1ffb02396395a36a5b13bccadbf5f1ac9a99a5ccb4fcdaa7834173d8c07c1"
+      sha256 "37c151e47092889e6fb6c01693461a9a8bda31f236b04f49b284c67a356b76ee"
 
       def install
         bin.install "cgapp"
