@@ -7,7 +7,7 @@ class Cgapp < Formula
 Focus on writing code and thinking of business-logic! The CLI will take care of the rest.
 "
   homepage "https://github.com/create-go-app/cli"
-  version "4.0.1"
+  version "4.1.0"
   license "Apache 2.0"
 
   depends_on "git"
@@ -15,16 +15,16 @@ Focus on writing code and thinking of business-logic! The CLI will take care of 
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_darwin_arm64.tar.gz"
-      sha256 "fe965da42fe261096caf2b4900047818d893438ec9e059f1e403bcb313dbdadd"
+      url "https://github.com/create-go-app/cli/releases/download/v4.1.0/cgapp_4.1.0_darwin_arm64.tar.gz"
+      sha256 "6459f419def6e401c2e6ac9ad97eaea1527701caf9443add322d054644d19a05"
 
       def install
         bin.install "cgapp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_darwin_amd64.tar.gz"
-      sha256 "94d72492c108c3963d9c0eb9b1a329561e0b17e7b1ff08084b7d06bd8828edfb"
+      url "https://github.com/create-go-app/cli/releases/download/v4.1.0/cgapp_4.1.0_darwin_amd64.tar.gz"
+      sha256 "83a09c9386867c8a87fafccd567d4bdefd287fa5d248ffac9ae6471e6ae40aa0"
 
       def install
         bin.install "cgapp"
@@ -34,16 +34,16 @@ Focus on writing code and thinking of business-logic! The CLI will take care of 
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_linux_arm64.tar.gz"
-      sha256 "20d7ac57361e8ef807315851b7703ab6ede3a8a29d4c80be2d4ef5258e8cabd6"
+      url "https://github.com/create-go-app/cli/releases/download/v4.1.0/cgapp_4.1.0_linux_arm64.tar.gz"
+      sha256 "df3cf86ac6c74d7072aff6118136accb06a5547bdf377ede51ab20aa94b41bb2"
 
       def install
         bin.install "cgapp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/create-go-app/cli/releases/download/v4.0.1/cgapp_4.0.1_linux_amd64.tar.gz"
-      sha256 "37c151e47092889e6fb6c01693461a9a8bda31f236b04f49b284c67a356b76ee"
+      url "https://github.com/create-go-app/cli/releases/download/v4.1.0/cgapp_4.1.0_linux_amd64.tar.gz"
+      sha256 "a391f92ec914c0634810de54347e4e49dd183c00749769e3c098a7b0d7ce1c0b"
 
       def install
         bin.install "cgapp"
@@ -53,7 +53,7 @@ Focus on writing code and thinking of business-logic! The CLI will take care of 
 
   def caveats
     <<~EOS
-      After install cgapp, let's create a new project via interactive console UI (or CUI for short) in current folder:
+      After install (or update) cgapp, let's create a new project via interactive console UI in current folder:
 
       $ cgapp create
 
